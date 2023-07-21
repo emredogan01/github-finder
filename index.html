@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark text-bg-dark">
+    <!-- header bölümü -->
+    <header class="navbar navbar-dark bg-dark mb-3">
+        <div class="container">
+            <a href="/" class="navbar-brand">Github Bulucu</a>
+            <button class="btn btn-light" id="theme-btn">Açık Mod</button>
+        </div>
+    </header>
+    <!-- form alanı -->
+    <div class="container">
+        <!-- js'den gelen alert -->
+        <div id="alert">
+            <!-- <div class="alert alert-danger">Kullanıcı bulanamadı</div> -->
+        </div>
+
+        <div class="border p-3">
+            <h1>Github kullanıcı adını ara</h1>
+            <p>Kullanıcı adnına erişmek için bir kullanıcı adını giriniz</p>
+            <div class="d-flex gap-3">
+                <input id="search-input" class="form-control" type="text">
+                <button id="search-btn" class="btn btn-primary btn-lg">Ara</button>
+            </div>  
+        </div>
+    </div>
+    <!-- kullanıcı bilgi alanı -->
+    <div class="container" id="profile">
+    </div>
+    <!-- repolar alanı -->
+    <div class="container p-3" id="repos">
+    </div>
+
+
+    <!-- script -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
